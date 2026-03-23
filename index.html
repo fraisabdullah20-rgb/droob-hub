@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droob Hub | طريقك للثراء الرقمي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Tajawal:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-gold: #ffd700;
+            --dark-bg: #0a0a0a;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        /* تحسين الخلفية */
+        .bg-glow {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1a237e 0%, #0a0a0a 100%);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        /* الهيدر */
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--glass-bg);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--primary-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* قسم البطولة Hero Section */
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 5%;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #fff, var(--primary-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            background: var(--primary-gold);
+            color: #000;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+        }
+
+        /* قسم المنتجات والتقييمات */
+        .section-title {
+            text-align: center;
+            padding: 50px 0;
+            font-size: 2rem;
+            color: var(--primary-gold);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px 5%;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--primary-gold);
+            transform: translateY(-10px);
+        }
+
+        /* أزرار التواصل العائمة */
+        .floating-contact {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 9999;
+        }
+
+        .icon-btn {
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            display: flex; justify-content: center; align-items: center;
+            color: white; font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .whatsapp { background: #25d366; }
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+
+        .icon-btn:hover { transform: rotate(360deg) scale(1.1); }
+
+        /* تذييل الصفحة */
+        footer {
+            padding: 40px;
+            text-align: center;
+            background: #050505;
+            margin-top: 50px;
+            border-top: 1px solid var(--glass-bg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<header>
+    <div class="logo">Droob Hub</div>
+    <div>
+        <a href="https://www.instagram.com/droob.hub" style="color: white; text-decoration: none;"><i class="fab fa-instagram"></i> متابعة</a>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>بوابتك لعالم الثراء الرقمي</h1>
+    <p>تعلم كيف تصنع وتبيع منتجاتك الرقمية وتبدأ مشروعك من الصفر باستخدام هاتفك فقط. الطريق الواضح يبدأ من Droob Hub.</p>
+    <a href="https://wa.me/967779151313" class="cta-btn">احصل على كتابك المجاني</a>
+</section>
+
+<h2 class="section-title">لماذا دروب الرقمي؟</h2>
+<div class="grid-container">
+    <div class="card">
+        <i class="fas fa-rocket" style="font-size: 40px; color: gold; margin-bottom: 15px;"></i>
+        <h3>من الصفر للاحتراف</h3>
+        <p>لا تحتاج خبرة سابقة، نأخذ بيدك خطوة بخطوة حتى تحقيق أول مبيعة.</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-mobile-alt" style="font-size: 40px; color: gold; margin-bottom: 15px;"></i>
+        <h3>بموبايلك فقط</h3>
+        <p>كل ما تحتاجه هو هاتفك واتصال بالإنترنت لتبدأ مشروعك الخاص.</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-check-circle" style="font-size: 40px; color: gold; margin-bottom: 15px;"></i>
+        <h3>تقييماتنا (5 نجوم)</h3>
+        <p>أكثر من 10,000 مستفيد بدأوا رحلتهم بنجاح معنا بفضل الله.</p>
+    </div>
+</div>
+
+<h2 class="section-title">تواصل معنا</h2>
+<div style="text-align: center; padding-bottom: 50px;">
+    <p>الأرقام الرسمية:</p>
+    <p style="font-size: 1.5rem; color: var(--primary-gold);">779151313 | 734419794</p>
+</div>
+
+<footer>
+    <p>© 2026 Droob Hub. جميع الحقوق محفوظة.</p>
+    <p>صنع بشغف لتمكين الشباب العربي.</p>
+</footer>
+
+<div class="floating-contact">
+    <a href="https://wa.me/967779151313" class="icon-btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/droob.hub" class="icon-btn instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+</body>
+</html>
